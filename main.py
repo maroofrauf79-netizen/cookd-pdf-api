@@ -74,7 +74,7 @@ async def extract_chapter(
             chapter_text = full_text[:20000]
         
         # Cap at 15000 chars
-        chapter_text = chapter_text[:15000].strip()
+        chapter_text = chapter_text[:50000].strip()
         
         word_count = len(chapter_text.split())
         
